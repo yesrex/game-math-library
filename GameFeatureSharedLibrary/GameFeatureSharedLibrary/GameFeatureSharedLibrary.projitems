@@ -9,7 +9,12 @@
     <Import_RootNamespace>GameFeatureSharedLibrary</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\WayWinScanResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\CascadingHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\ReelBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\WayWinScanner.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RandomNumber\BaseRng.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Slot\SlotView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Slot\Reel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Slot\Symbol.cs" />
   </ItemGroup>
