@@ -81,13 +81,13 @@ namespace Simulator.Games
             { S5, 7},
             { S6, 15},
             { S7, 31},
-            { S8, 54},
+            { S8, 58},
         });
 
         internal static RandomWeightArray fullReelAmountWeights = new RandomWeightArray(new int[,]
         {
-            { 0, 135},
-            { 1, 35},
+            { 0, 175},
+            { 1, 40},
             { 2, 10},
             { 3, 1},
         });
@@ -102,10 +102,10 @@ namespace Simulator.Games
             { 1, 30},
             { 2, 22},
             { 3, 16},
-            { 3, 16},
+            { 4, 16},
             { 5, 8},
-            { 6, 4},
-            { 7, 2},
+            { 6, 3},
+            { 7, 1},
         });
 
         internal static RandomWeightArray boostBonusIndexWeights = new RandomWeightArray(new int[,]
@@ -116,7 +116,7 @@ namespace Simulator.Games
             { 3, 1},
             { 4, 1},
             { 5, 1},
-            { 6, 1},
+            { 6, 2},
             { 7, 2},
         });
 
@@ -137,7 +137,7 @@ namespace Simulator.Games
                 {
                     int tmpIndex = rand.Next(reelIndexPool.Count);
                     reelIndexes.Add(reelIndexPool[tmpIndex]);
-                    reelIndexPool.Remove(tmpIndex);
+                    reelIndexPool.Remove(reelIndexPool[tmpIndex]);
                 }
                 //tmp
                 /*double proba = (double)fullReelAmount / 3;
@@ -202,7 +202,26 @@ namespace Simulator.Games
         {
             var bonus = new BonusWin(symbolType, basePayout);
             var remainEndCount = BONUS_END_COUNT;
-            while(remainEndCount > 0)
+
+            //tmp
+            //bool redraw1 = true;
+            //while (redraw1)
+            //{
+            //    remainEndCount = 2;
+            //    redraw1 = false;
+            //    while (remainEndCount > 0)
+            //    {
+            //        var endIndex = endBonusIndexWeights.rollSingleItem(rand);
+            //        bonus.Outcomes[endIndex] = WheelOutcome.End;
+            //        if (bonus.Outcomes[endIndex] == WheelOutcome.Win)
+            //        {
+            //            redraw1 = true;
+            //        }
+            //        remainEndCount--;
+            //    }
+            //}
+            //tmp
+            while (remainEndCount > 0)
             {
                 var endIndex = endBonusIndexWeights.rollSingleItem(rand);
                 if (bonus.Outcomes[endIndex] == WheelOutcome.Win)
@@ -270,6 +289,11 @@ namespace Simulator.Games
             internal Distribution WinDistribution = new Distribution(new double[] { 0, 1.0, 5, 15, 30, 100, 1000});
             internal Distribution BGWinDistribution = new Distribution(new double[] { 0, 1.0, 5, 15, 30, 100 , 1000});
             internal Distribution FSWinDistribution = new Distribution(new double[] { 0, 1.0, 5, 15, 30, 100, 1000 });
+            internal double[] boostTriggerRoundProba = new double[8];
+            internal double[] bonusEndRoundProba = new double[8];
+            internal double fs = 0;
+            internal double firstBoost = 0;
+            internal double endBonus = 0;
 
             internal void Add(SlotSpin mainSpin, BonusWin? bonus)
             {
@@ -302,6 +326,25 @@ namespace Simulator.Games
 
                     AverageFSPayouts.Add((double)bonus.TotalWin / BET_SIZE);
                     FSWinDistribution.Add((double)bonus.TotalWin / BET_SIZE);
+
+                    fs += 1;
+                    for(int i = 0; i<bonus.Outcomes.Length; i++)
+                    {
+                        if (bonus.Outcomes[i] == WheelOutcome.End)
+                        {
+                            if (i == 6)
+                                bonusEndRoundProba[5]++;
+                            else
+                                bonusEndRoundProba[i]++;
+                            break;
+                        }
+                        else if (bonus.Outcomes[i] == WheelOutcome.Boost)
+                            boostTriggerRoundProba[i]++;
+                    }
+                    if (bonus.Outcomes[6] == WheelOutcome.End && bonus.Outcomes[7] == WheelOutcome.End)
+                        endBonus += 1;
+                    if (bonus.Outcomes[0] == WheelOutcome.Boost)
+                        firstBoost += 1;
                 }
             }
 
@@ -337,12 +380,25 @@ namespace Simulator.Games
                 Console.WriteLine("--------------");
                 for(int i=0; i<BonusSymbolProba.Length; i++)
                 {
-                    Console.WriteLine($"P({i} | Bonus): {BonusSymbolProba[i]/HitFSProba.amount}");
+                    Console.WriteLine($"P({i} | Bonus): {BonusSymbolProba[i]/ fs}");
                 }
                 Console.WriteLine("--------------");
                 Console.WriteLine($"P(Hit Boost | Bonus): {HitBoostProba.Percentage}");
                 Console.WriteLine($"Boost Mode Hit Rate: {BoostHitRate.Percentage}");
                 Console.WriteLine(string.Format("Average Boost Payouts: {0,2:F}x", AverageBoostPayouts.Value));
+                Console.WriteLine("--------------");
+                for (int i = 0; i < bonusEndRoundProba.Length; i++)
+                {
+                    Console.WriteLine($"P({i}th end | Bonus): {bonusEndRoundProba[i] / fs}");
+                }
+                Console.WriteLine("--------------");
+                for (int i = 0; i < boostTriggerRoundProba.Length; i++)
+                {
+                    Console.WriteLine($"P({i}th boost | Bonus): {boostTriggerRoundProba[i] / fs}");
+                }
+                Console.WriteLine("--------------");
+                Console.WriteLine($"P(first boost | Bonus): {firstBoost / fs}");
+                Console.WriteLine($"P(full end bonus | Bonus): {endBonus / fs}");
                 Console.WriteLine("--------------");
             }
         }
