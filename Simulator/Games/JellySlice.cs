@@ -76,14 +76,14 @@ namespace Simulator.Games
             new int[] { // no LR5
                         WR, LR2,LR2,LR3,LR4,LR1,LR3,MR1,MR4,H1,MR1,MR2,MR3,MR3,MR3,MR4,LR1,LR3,LR4,LR2,LR1,LR3,LR3,LR3,MR1,MR2,LR4,LR3,
                         SC, LR3,LR4,LR2,LR2,LR2,LR3,MR1,MR2,H1,MR4,MR3,MR1,LR1,LR3,LR4,LR2,LR1,MR2,MR2,LR2,LR3,MR1,MR3,LR4,LR3,LR1,LR2,
-                        LR3, LR3,LR4,LR1,LR2,LR2,LR3,MR1,MR2,H1,MR4,LR1,MR3,MR3,MR2,LR1,LR3,LR4,LR2,LR1,MR2,MR4,LR2,LR3,MR1,MR3,LR4,LR3,
-                        LR2,LR2,LR2,LR2,MR3,MR1,LR1,LR3,MR2,H1,MR4,LR1,MR3,MR3,MR2,LR1,LR3,LR4,LR2,LR1,MR2,MR4,LR2,LR3,MR1,MR2,LR4,LR3,
+                        LR3, LR3,LR4,LR1,LR2,LR2,LR3,MR1,MR2,H1,MR4,LR1,MR3,MR3,MR2,LR1,LR3,LR4,LR2,LR1,LR1,LR1,LR1,MR4,LR2,LR3,MR1,MR1,MR1,MR1,LR4,LR3,
+                        LR2,LR2,LR2,LR2,MR3,MR1,LR1,LR3,MR2,H1,H1,H1,MR4,LR1,MR3,MR3,MR2,LR1,LR3,LR4,LR2,LR1,MR2,MR4,LR2,LR3,LR1,MR2,LR4,LR3,
                       },
             new int[] {
-                        LR5,LR1,LR1,LR3,LR4,LR5,MR1,MR1,MR4,H1,MR2,MR2,MR3,MR3,MR3,MR1,LR5,LR3,LR4,LR1,LR2,LR3,LR3,LR5,MR1,MR3,LR4,LR3,
+                        LR5,LR1,LR1,LR3,LR4,LR5,MR1,MR1,MR4,H1,MR2,MR2,MR3,MR3,MR3,MR3,MR1,LR5,LR3,LR4,LR1,LR2,LR3,LR3,LR5,MR1,MR3,LR4,LR3,
                         SC, LR3,LR4,LR1,LR1,LR5,LR5,MR1,MR2,H1,MR4,MR3,MR1,LR2,LR3,LR4,LR1,LR2,MR2,MR4,LR5,LR3,MR1,MR3,LR4,LR3,LR2,LR1,
                         WR, LR3,LR4,LR2,LR1,LR1,LR5,MR1,MR2,H1,MR4,LR2,MR3,MR3,MR1,LR2,LR3,LR4,LR5,LR2,MR2,MR4,LR1,LR3,MR1,MR3,LR4,LR3,
-                        LR1,LR1,LR1,LR4,MR3,MR1,LR2,LR5,MR2,H1,MR4,LR2,MR3,MR3,MR1,LR2,LR3,LR4,LR1,LR5,MR2,MR4,LR1,LR3,MR1,MR3,LR4,LR3,
+                        LR1,LR1,LR1,LR1,LR4,MR3,MR1,LR2,LR5,MR2,H1,MR4,LR2,MR3,MR3,MR1,LR2,LR3,LR4,LR1,LR5,MR2,MR4,LR1,LR3,MR1,MR3,LR4,LR3,
                       },
             new int[] { // no MR2
                         LR1,LR1,LR3,LR4,LR2,LR5,MR1,MR3,MR3,H1,MR1,MR4,MR4,MR4,MR3,MR1,LR2,LR3,LR4,LR5,LR2,LR3,LR3,LR5,MR1,MR4,LR4,LR3,
@@ -92,15 +92,15 @@ namespace Simulator.Games
                         LR1,LR1,LR4,LR4,MR4,MR1,LR2,LR5,MR1,H1,LR2,LR5,MR4,MR4,MR1,LR2,LR3,LR4,LR5,LR2,MR1,MR4,LR1,LR3,MR1,MR4,LR4,LR3,
                       },
             new int[] { // few LR4
-                        LR4,LR5,LR3,LR2,LR1,LR5,MR1,MR2,MR3,H1,MR1,MR2,MR4,MR4,MR4,MR1,MR2,H1,LR2,LR1,LR5,LR3,LR3,LR2,MR2,H1,LR5,LR3,
-                        SC, LR3,LR5,LR1,LR1,LR1,LR5,MR1,MR2,H1,MR3,MR4,MR1,LR2,LR3,LR5,LR1,LR2,MR2,MR3,H1,LR3,MR1,MR4,LR5,LR3,LR2,LR1,
+                        LR4,LR5,LR3,LR2,LR1,LR5,MR1,MR2,MR3,H1,MR1,MR2,MR4,MR4,MR4,MR4,MR1,MR2,H1,LR2,LR1,LR5,LR3,LR3,LR2,MR2,H1,LR5,LR3,
+                        SC, LR3,LR5,LR1,LR1,LR1,LR1,LR5,MR1,MR2,H1,MR3,MR4,MR1,LR2,LR3,LR5,LR1,LR2,MR2,MR3,H1,LR3,MR1,MR4,LR5,LR3,LR2,LR1,
                         WR, LR3,LR5,LR2,LR2,LR2,LR5,MR1,MR2,H1,MR3,LR2,MR4,MR4,MR1,MR2,LR3,LR5,LR1,LR2,MR2,MR3,LR1,LR3,MR1,MR4,LR2,LR3,
-                        LR1,LR5,LR5,LR5,MR4,MR1,LR2,LR3,MR2,H1,MR3,LR2,MR4,MR4,MR1,MR2,LR3,LR5,LR1,LR2,MR2,MR3,LR1,LR3,MR1,MR4,LR2,LR3,
+                        LR1,LR5,LR5,LR5,MR4,MR1,LR2,LR3,MR2,H1,H1,H1,MR3,LR2,MR4,MR4,MR1,MR2,LR3,LR5,LR1,LR2,MR2,MR3,LR1,LR3,MR1,MR4,LR2,LR3,
                       },
-            new int[] { LR2, LR1,LR1,LR3,LR4,LR5,LR5,MR2,MR1,MR4,H1,MR1,MR2,MR3,MR3,MR3,MR1,MR2,LR3,LR4,LR4,LR2,LR3,LR3,LR5,MR2,MR2,LR4,LR3,
+            new int[] { LR2, LR1,LR1,LR3,LR4,LR5,LR5,MR2,MR1,MR4,H1,MR1,MR2,MR3,MR3,MR3,MR3,MR1,MR2,LR3,LR4,LR4,LR2,LR3,LR3,LR5,MR2,MR2,LR4,LR3,
                         LR5,LR5,LR4,LR1,LR1,LR1,LR5,MR1,MR2,H1,MR4,MR3,MR1,LR2,LR3,LR4,LR1,LR2,MR2,MR2,LR5,LR5,MR1,MR3,LR4,LR4,LR2,LR1,
-                        SC, LR3,LR4,LR1,LR5,LR5,LR5,MR1,MR2,H1,MR4,MR3,MR1,LR5,LR3,LR4,LR1,LR2,MR2,MR2,LR5,LR5,MR1,MR3,LR4,LR3,LR2,LR5,
-                        WR, LR3,LR2,LR4,LR4,LR1,LR5,MR1,MR2,H1,H1,MR4,LR1,MR3,MR2,MR1,LR5,LR3,LR4,LR1,LR2,MR2,H1,LR5,LR3,MR1,MR3,LR2,LR5,
+                        SC, LR3,LR4,LR1,LR5,LR5,LR5,LR5,MR1,MR2,H1,MR4,MR3,MR1,LR5,LR3,LR4,LR1,LR2,MR2,MR2,LR5,LR5,MR1,MR3,LR4,LR3,LR2,LR5,
+                        WR, LR3,LR2,LR4,LR4,LR1,LR5,MR1,MR2,H1,H1,H1,H1,MR4,LR1,MR3,MR2,MR1,LR5,LR3,LR4,LR1,LR2,MR2,H1,LR5,LR3,MR1,MR3,LR2,LR5,
                       },
             },
             new int[][]{
@@ -175,28 +175,28 @@ namespace Simulator.Games
         {
             new int[][]{
             new int[] { // no LR5
-                        WR, LR2,LR2,LR3,LR4,LR1,LR3,MR4,MR4,H1,MR1,MR1,MR3,MR3,MR3,MR4,LR1,LR3,LR4,LR2,LR1,LR3,LR3,LR3,MR1,MR2,LR4,LR3,
+                        WR, LR2,LR2,LR3,LR4,LR1,LR3,MR4,MR4,H1,MR1,MR1,MR3,MR3,MR3,MR3,MR4,LR1,LR3,LR4,LR2,LR1,LR3,LR3,LR3,MR1,MR2,LR4,LR3,
                         LR1,LR3,LR4,LR2,LR2,LR2,LR3,MR1,MR2,H1,MR4,MR3,MR1,LR1,LR3,LR4,LR2,LR1,MR2,MR2,LR2,LR3,MR1,MR3,LR4,LR3,LR1,LR2,
                         LR3,LR3,LR4,LR1,LR2,LR2,LR3,MR1,MR1,H1,MR4,LR1,MR3,MR3,MR2,LR1,LR3,LR4,LR2,LR1,MR2,MR4,LR2,LR3,MR2,MR3,LR4,LR3,
-                        LR2,LR2,LR2,LR2,MR3,MR1,LR1,LR3,H1 ,H1,MR4,LR1,MR1,MR1,MR1,LR1,LR3,LR4,LR2,LR1,MR2,MR4,LR2,LR3,MR1,MR2,LR4,LR3,
+                        LR2,LR2,LR2,LR2,MR3,MR1,LR1,LR3,H1 ,H1,H1, MR4,LR1,MR1,MR1,MR1,LR1,LR3,LR4,LR2,LR1,MR2,MR4,LR2,LR3,MR1,MR2,LR4,LR3,
                       },
             new int[] {
-                        LR5,LR5,LR1,LR3,LR4,LR5,MR1,MR1,MR4,H1,MR2,MR2,MR3,MR3,MR3,MR1,LR5,LR3,LR4,LR1,LR2,LR3,LR3,LR5,MR2,MR2,LR4,LR3,
-                        LR5,LR3,LR4,LR1,LR1,LR5,LR5,MR1,MR2,H1,MR4,MR3,MR1,LR5,LR5,LR4,LR1,LR2,MR2,MR4,LR5,LR3,MR1,MR3,LR4,LR5,LR5,LR1,
-                        WR, LR3,LR4,LR2,LR1,LR1,LR5,MR1,MR2,H1,MR4,LR2,MR3,MR2,MR1,LR2,LR3,LR4,LR5,LR2,MR2,MR4,LR1,LR3,MR1,MR3,LR4,LR3,
-                        LR5,LR1,LR1,LR4,MR3,MR1,LR2,LR5,MR2,H1,MR4,LR2,MR3,MR3,MR1,LR2,LR3,LR4,LR1,LR5,MR2,MR4,LR1,LR3,MR1,MR3,LR4,LR3,
+                        LR5,LR5,LR1,LR3,LR4,LR5,MR1,MR1,MR4,H1,MR2,MR2,MR3,MR3,MR3,MR3,MR1,LR5,LR3,LR4,LR1,LR2,LR3,LR3,LR5,MR2,MR2,LR4,LR3,
+                        WR, LR5,LR3,LR4,LR1,LR1,LR5,LR5,MR1,MR2,H1,MR4,MR3,MR1,LR5,LR5,LR4,LR1,LR2,MR2,MR4,LR5,LR3,MR1,MR3,LR4,LR5,LR5,LR1,
+                        WR, LR3,LR4,LR2,LR1,LR1,LR5,MR1,MR2,H1,MR4,LR2,MR3,MR2,MR1,LR2,LR3,LR4,LR5,LR2,LR2,LR2,LR2,MR2,MR4,LR1,LR3,MR1,MR3,LR4,LR3,
+                        WR, LR5,LR1,LR1,LR4,MR3,MR1,LR2,LR5,MR2,H1,MR4,LR2,MR3,MR3,MR1,LR2,LR3,LR4,LR1,LR5,MR2,MR4,LR1,LR3,MR1,MR3,LR4,LR3,
                       },
             new int[] { // no MR2
                         LR1,LR1,LR3,LR4,LR5,LR5,MR1,MR3,MR3,H1,MR1,MR4,MR4,MR4,MR3,MR1,LR2,LR3,LR5,LR5,LR2,LR3,LR3,LR5,MR1,MR4,LR4,LR3,
                         LR5,LR3,LR4,LR1,LR2,LR2,LR5,MR1,MR1,H1,MR3,MR4,MR1,LR2,LR3,LR4,LR1,LR2,MR1,MR4,LR5,LR3,MR1,MR4,LR4,LR3,LR2,LR1,
                         WR, LR3,LR2,LR4,LR4,LR4,LR5,MR1,MR1,H1,LR5,LR2,MR4,MR4,MR1,LR2,LR3,LR4,LR5,LR2,MR1,MR4,LR1,LR3,MR1,MR4,LR4,LR3,
-                        LR1,LR1,LR4,LR4,MR4,MR1,LR2,LR5,MR1,H1,LR2,LR5,MR4,MR4,MR1,LR2,LR3,LR4,LR5,LR2,MR1,MR4,LR5,LR3,MR1,MR4,LR4,LR3,
+                        WR, LR1,LR1,LR4,LR4,MR4,MR1,LR2,LR5,MR1,H1,LR2,LR5,MR4,MR4,MR1,LR2,LR3,LR4,LR5,LR2,MR1,MR4,LR5,LR3,MR1,MR4,LR4,LR3,
                       },
             new int[] { // few LR4
-                        LR4,LR5,LR3,LR2,LR1,LR5,MR1,MR2,MR3,H1,MR1,MR2,MR4,MR4,MR4,MR1,MR2,H1,LR2,LR1,LR1,LR3,LR3,LR2,MR2,H1,LR5,LR3,
+                        LR4,LR5,LR3,LR2,LR1,LR5,MR1,MR2,MR3,H1,MR1,MR2,MR4,MR4,MR4,MR4,MR1,MR2,H1,LR2,LR1,LR1,LR3,LR3,LR2,MR2,H1,LR5,LR3,
                         SC, LR3,LR5,LR1,LR1,LR1,LR5,MR1,H1,H1,MR3,MR4,MR1,LR2,LR3,LR5,LR1,LR2,MR2,MR3,H1,LR3,MR1,MR4,LR5,LR3,LR2,LR1,
-                        WR, LR3,LR5,LR2,LR2,LR2,LR5,MR1,H1,H1,MR3,LR2,MR4,MR4,MR1,MR3,LR3,LR5,LR1,LR2,MR2,MR3,LR1,LR3,MR1,MR4,LR2,LR3,
-                        LR1,LR5,LR5,LR5,MR4,MR1,LR2,LR3,H1,H1,MR3,LR2,MR4,MR4,MR1,MR3,LR3,LR5,LR1,LR2,MR2,MR3,LR1,LR3,MR1,MR4,LR2,LR3,
+                        WR, LR3,LR5,LR2,LR2,LR2,LR5,MR1,H1,H1,H1,MR3,LR2,MR4,MR4,MR1,MR3,LR3,LR5,LR1,LR2,MR2,MR3,LR1,LR3,MR1,MR4,LR2,LR3,
+                        WR, LR1,LR5,LR5,LR5,MR4,MR1,LR2,LR3,H1,H1,MR3,LR2,MR4,MR4,MR1,MR3,LR3,LR5,LR1,LR2,MR2,MR3,LR1,LR3,MR1,MR4,LR2,LR3,
                       },
             new int[] { LR2, LR1,LR1,LR3,LR4,LR5,LR5,MR2,MR1,MR1,H1,MR4,MR2,MR3,MR1,MR1,MR1,MR2,LR3,LR4,LR4,LR2,LR3,LR3,LR5,MR2,MR2,LR4,LR3,
                         LR2, LR5,LR4,LR1,LR1,LR1,LR5,MR1,MR2,H1,MR4,MR3,MR1,LR2,LR3,LR4,LR1,LR2,MR2,MR2,LR5,LR5,MR1,MR3,LR4,LR4,LR2,LR1,
@@ -239,15 +239,15 @@ namespace Simulator.Games
 
         internal static RandomWeightArray basegameReelWeights = new RandomWeightArray(new int[,]
         {
-            { 0, 945},
-            { 1,  38},
+            { 0, 946},
+            { 1,  37},
             { 2,  17}
         });
         internal static RandomWeightArray basegameReelWeightsBonusHunt = new RandomWeightArray(new int[,]
         {
-            { 0, 100},
-            { 1, 883},
-            { 2,  17}
+            { 0, 220},
+            { 1, 760},
+            { 2,  20}
         });
         internal static RandomWeightArray basegameReelWeightsFeatureSpin = new RandomWeightArray(new int[,]
         {
@@ -272,9 +272,9 @@ namespace Simulator.Games
                 { 0, 900},
                 { 1,  50},
                 { 2,  30},
-                { 3,  15},
-                { 4,   3},
-                { 5,   2},
+                { 3,  10},
+                { 4,   5},
+                { 5,   5},
             }),
             new RandomWeightArray(new int[,] 
             {
@@ -305,12 +305,12 @@ namespace Simulator.Games
 
         internal static RandomWeightArray slicerAmountWeightFS = new RandomWeightArray(new int[,]
         {
-            { 0,  25},
+            { 0,  20},
             { 1,  20},
             { 2,  20},
-            { 3,  20},
-            { 4,  10},
-            { 5,   5},
+            { 3,  15},
+            { 4,  15},
+            { 5,  10},
         });
 
         internal const int FeatureBuySlicerRow = 0;
@@ -324,35 +324,35 @@ namespace Simulator.Games
 
         internal static RandomWeightArray slicerValueWeight = new RandomWeightArray(new int[,]
         {
-            { 4, 2},
-            { 3, 3},
-            { 2, 5},
+            { 4, 25},
+            { 3, 25},
+            { 2, 50},
         });
 
         internal static RandomWeightArray[] slicerValueWeightsFeatureBuy = new RandomWeightArray[]
         {
             new RandomWeightArray(new int[,] // 98%
             {
-                { 4, 20},
-                { 3, 30},
+                { 4, 19},
+                { 3, 31},
                 { 2, 50},
             }),
             new RandomWeightArray(new int[,] // 90%
             {
-                { 4, 14},
-                { 3, 20},
-                { 2, 66},
+                { 4, 12},
+                { 3, 23},
+                { 2, 65},
             }),
         };
 
-        internal static double redrawNoSliceWinProba = 0.2;
+        internal static double redrawNoSliceWinProba = 0.10;
         internal static double redrawNoSliceWinProbaBonusHunt = 0.2;
         internal static double redrawNoSliceWinProbaFeatureSpin = 0.75;
-        internal static double redrawNoSliceWinProbaFS = 0.65;
+        internal static double redrawNoSliceWinProbaFS = 0.3;
 
-        internal double[] deadSpinProbas = new double[] { 0.462, 0.506 };
-        internal double[] deadSpinProbasBonusHunt = new double[] { 0.209, 0.274 };
-        internal double[] deadSpinProbasFeatureSpin = new double[] { 0.006, 0.087 };
+        internal double[] deadSpinProbas = new double[] { 0.444, 0.49 };
+        internal double[] deadSpinProbasBonusHunt = new double[] { 0.22, 0.284 };
+        internal double[] deadSpinProbasFeatureSpin = new double[] { 0.046, 0.124 };
 
         internal static readonly double[] bgRedrawThresholds =
         {
@@ -361,9 +361,9 @@ namespace Simulator.Games
 
         internal static readonly double[][] bgRedrawProbas =
         {
-           new double[]{  0,    0,   0, 0.00, 0.00,  0.30, 0.60,  0.90,  0.96,  0.999 },
-           new double[]{  0,    0,   0, 0.00, 0.00,  0.50, 0.80,  0.95,  0.99,  0.999 },
-           new double[]{  0,  0.4, 0.2, 0.00, 0.00,  0.00, 0.00,  0.00,  0.10, 0.999 },
+           new double[]{  0,    0,   0, 0.00, 0.00,  0.10, 0.40,  0.80,  0.95,  1 },
+           new double[]{  0,    0,   0, 0.00, 0.00,  0.50, 0.80,  0.95,  0.99,  1 },
+           new double[]{  0,  0.4, 0.2, 0.00, 0.00,  0.00, 0.00,  0.00,  0.10,  1 },
         };
 
         internal static readonly double[] bonusRedrawThresholds =
@@ -373,7 +373,7 @@ namespace Simulator.Games
 
         internal static readonly double[] bonusRedrawProbas = new double[]
         {
-             1,  0.00,  0.00,   0.00,  0.00,  0.00,  0.00,  0.15,   0.20,   0.40,  0.80, 0.999
+             1,  0.00,  0.00,   0.00,  0.00,  0.00,  0.05,  0.20,   0.40,   0.60,  0.80, 1
         };
 
         // State Variable
@@ -612,6 +612,7 @@ namespace Simulator.Games
                 CascadeDistBG.Add(mainSpin.CascadingCount);
                 SCLandingDistBG.Add(mainSpin.GetFinalSC());
                 SliceWinSymbolDistBG.Add(mainSpin.InitialSliceWinSymbol);
+                WinDistributionBG.Add(win / BET_SIZE);
 
                 //free spins
                 HitFSProba.Add(freeSpins == null ? 0 : 1);
@@ -663,7 +664,10 @@ namespace Simulator.Games
                 Console.WriteLine("Win Distribution:");
                 WinDistribution.PrintProbaOnConsole();
                 WinDistribution.PrintValuesOnConsole();
-
+                Console.WriteLine("--------------");
+                Console.WriteLine("BG Win Distribution:");
+                WinDistributionBG.PrintProbaOnConsole();
+                WinDistributionBG.PrintValuesOnConsole();
                 Console.WriteLine("--------------");
                 Console.WriteLine("cascade Distribution in basegame:");
                 CascadeDistBG.PrintProbaOnConsole();

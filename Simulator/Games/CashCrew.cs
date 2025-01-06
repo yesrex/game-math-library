@@ -98,7 +98,7 @@ namespace Simulator.Games
             {L8, 3},
         });
 
-        internal static readonly double CoinCollectProba = 0.05;
+        internal static readonly double CoinCollectProba = 0.049;
         internal static readonly double CoinCollectProbaFS = 0.45;
 
         internal static readonly RandomWeightArray CoinAmountWeights = new RandomWeightArray(new int[,]{
@@ -139,10 +139,10 @@ namespace Simulator.Games
         });
 
         internal static readonly RandomWeightArray CoinValueWeights = new RandomWeightArray(new int[,]{
-            {1,    200},
+            {1,    220},
             {2,    170},
-            {3,    150},
-            {4,    130},
+            {3,    160},
+            {4,    100},
             {5,    70},
             {10,   50},
             {15,   25},
@@ -183,7 +183,7 @@ namespace Simulator.Games
         });
 
         internal static readonly RandomWeightArray RetriggerAmountWeights = new RandomWeightArray(new int[,]{
-            {0, 90},
+            {0, 120},
             {1, 9},
             {2, 1},
         });
@@ -197,9 +197,9 @@ namespace Simulator.Games
         });
 
         internal static readonly RandomWeightArray WrAmountWeights = new RandomWeightArray(new int[,]{
-            {0, 17000},
-            {1, 2000},
-            {2, 950},
+            {0, 17700},
+            {1, 1500},
+            {2, 750},
             {3, 45},
             {4, 4},
             {5, 1},
@@ -228,9 +228,9 @@ namespace Simulator.Games
             {25, 1},
         });
 
-        internal double[] deadSpinProbas = new double[] { 0.167, 0.235 };
-        internal double[] deadSpinProbasBonusHunt = new double[] { 0.059, 0.135 };
-        internal readonly double[] betterFeatureSpinProba = { 0.607, 0.28 };
+        internal double[] deadSpinProbas = new double[] { 0.165, 0.233 };
+        internal double[] deadSpinProbasBonusHunt = new double[] { 0.076, 0.151 };
+        internal readonly double[] betterFeatureSpinProba = { 0.66, 0.33 };
 
         internal static readonly double[] bgRedrawThresholds =
         {
@@ -239,13 +239,13 @@ namespace Simulator.Games
 
         internal static readonly double[][] bgRedrawProbas =
         {
-           new double[]{  0,    0,   0, 0.00, 0.00,  0.20, 0.60,  0.90, 0.95,    1 },
+           new double[]{  0,    0,   0, 0.00, 0.00,  0.18, 0.50,  0.75, 0.90,    1 },
            new double[]{  0,    0,   0, 0.00, 0.00,  0.20, 0.60,  0.90, 0.95,    1 },
            new double[]{  0,    0,   0, 0.00, 0.00,  0.00, 0.00,  0.30,  0.9,    1 },
            new double[]{  0,    0,   0, 0.00, 0.00,  0.00, 0.50,  0.90, 0.95,    1 },
         };
 
-        internal static readonly double[] betterFsProba = { 0.813, 0.511 };
+        internal static readonly double[] betterFsProba = { 0.805, 0.395 };
         internal static readonly double[] bonusRedrawThresholds =
         {
                           0,     1,    10,     50,   100,   200,   500,   1000,   5000,  11000
@@ -253,11 +253,11 @@ namespace Simulator.Games
 
         internal static readonly double[][] bonusRedrawProbas = 
         {
-           new double[]{  1,  0.8,   0.4,   0.00,   0.00,  0.60,  0.90,   0.95,   0.99,  1 },
-           new double[]{  1,  0.8,   0.0,   0.00,   0.40,  0.85,  0.90,   0.95,   0.99,  1 },
+           new double[]{  1,  0.8,   0.4,   0.00,   0.00,  0.60,  0.70,   0.80,   0.96,  1 },
+           new double[]{  1,  0.8,   0.0,   0.00,   0.40,  0.70,  0.70,   0.80,   0.96,  1 },
         };
 
-        internal static readonly double[] betterSuperFsProba = { 0.764, 0.405 };
+        internal static readonly double[] betterSuperFsProba = { 0.703, 0.47 };
         internal static readonly double[] superFsRedrawThresholds =
         {
                           0,     1,    10,   100,   200,   500,   1000,   2000,   5000,  11000
@@ -265,8 +265,8 @@ namespace Simulator.Games
 
         internal static readonly double[][] superFsRedrawProbas =
         {
-           new double[]{  1, 0.95,   0.8,   0.00,   0.00,  0.30,  0.80,   0.90,   0.98,  1 },
-           new double[]{  1, 0.95,   0.4,   0.00,   0.00,  0.75,  0.92,   0.96,   0.99,  1 },
+           new double[]{  1, 0.95,   0.8,   0.00,   0.00,  0.10,  0.20,   0.30,   0.40,  1 },
+           new double[]{  1, 0.95,   0.4,   0.00,   0.00,  0.75,  0.80,   0.90,   0.96,  1 },
         };
 
         // State Variable
