@@ -168,7 +168,38 @@ namespace Simulator.Games
             new int[] { 
                         SC,LR1,LR2,LR5,SC,LR4,H1,MR4,SC,LR5,MR2,MR1,SC,LR3,LR2,LR5,SC,LR1,MR3,MR2,
                       },
-            }
+            },
+            new int[][]{
+            new int[] { // no LR5
+                        WR, LR2,LR2,LR3,LR4,LR1,LR3,MR1,MR4,H1,MR1,MR2,MR3,MR3,MR3,MR4,LR1,LR3,LR4,LR2,LR1,LR3,LR3,LR3,MR1,MR2,LR4,LR4,
+                        LR3,LR3,LR3,LR3,LR2,LR2,LR2,MR1,MR2,H1,MR4,MR3,MR1,LR1,LR3,LR4,LR2,LR1,MR2,MR2,LR2,LR3,MR1,MR3,LR4,LR3,LR1,LR2,
+                        LR3,LR3,LR4,LR1,LR2,LR2,LR3,MR1,MR2,H1,MR4,LR1,MR3,MR3,MR2,LR1,LR3,LR4,LR2,LR1,LR1,LR1,LR1,MR4,LR2,LR3,MR1,MR1,MR1,MR1,LR4,LR3,
+                        LR2,LR2,LR2,LR2,MR3,MR1,LR1,LR3,MR2,H1,H1,H1,MR4,LR1,MR3,MR3,MR2,LR1,LR3,LR4,LR2,LR1,MR2,MR4,LR2,LR3,LR1,MR2,LR4,LR3,
+                      },
+            new int[] {
+                        LR5,LR1,LR1,LR3,LR4,LR5,MR1,MR1,MR4,H1,MR2,MR2,MR3,MR3,MR3,MR3,MR1,LR5,LR3,LR4,LR1,LR2,LR3,LR3,LR5,MR1,MR3,LR4,LR4,
+                        LR3,LR3,LR3,LR3,LR1,LR5,LR5,MR1,MR2,H1,MR4,MR3,MR1,LR2,LR3,LR4,LR1,LR2,MR2,MR4,LR5,LR3,MR1,MR3,LR4,LR3,LR2,LR1,
+                        WR, LR3,LR4,LR2,LR1,LR1,LR5,MR1,MR2,H1,MR4,LR2,MR3,MR3,MR1,LR2,LR3,LR4,LR5,LR2,MR2,MR4,LR1,LR3,MR1,MR3,LR4,LR3,
+                        LR1,LR1,LR1,LR1,LR4,MR3,MR1,LR2,LR5,MR2,H1,MR4,LR2,MR3,MR3,MR1,LR2,LR3,LR4,LR1,LR5,MR2,MR4,LR1,LR3,MR1,MR3,LR4,LR3,
+                      },
+            new int[] { // no MR2
+                        LR1,LR1,LR3,LR4,LR2,LR5,MR1,MR3,MR3,H1,MR1,MR4,MR4,MR4,MR3,MR1,LR2,LR2,LR4,LR5,LR3,LR3,LR3,LR3,MR1,MR4,LR4,LR5,
+                        LR5,LR3,LR4,LR1,LR2,LR2,LR5,MR1,MR1,H1,MR3,MR4,MR1,LR2,LR3,LR4,LR1,LR2,MR1,MR4,LR5,LR3,MR1,MR4,LR4,LR3,LR2,LR1,
+                        WR, LR3,LR2,LR4,LR4,LR4,LR5,MR1,MR1,H1,LR5,LR2,MR4,MR4,MR1,LR2,LR3,LR4,LR5,LR2,MR1,MR4,LR1,LR3,MR1,MR4,LR4,LR3,
+                        LR1,LR1,LR4,LR4,MR4,MR1,LR2,LR5,MR1,H1,LR2,LR5,MR4,MR4,MR1,LR2,LR3,LR4,LR5,LR2,MR1,MR4,LR1,LR3,MR1,MR4,LR4,LR3,
+                      },
+            new int[] { // few LR4
+                        LR4,LR5,LR2,LR2,LR1,LR5,MR1,MR2,MR3,H1,MR1,MR2,MR4,MR4,MR4,MR4,MR1,MR2,H1,LR2,LR1,LR3,LR3,LR3,LR3,MR2,H1,LR5,LR2,
+                        LR3,LR5,LR1,LR1,LR1,LR1,LR5,MR1,MR2,H1,MR3,MR4,MR1,LR2,LR3,LR5,LR1,LR2,MR2,MR3,H1,LR3,MR1,MR4,LR5,LR3,LR2,LR1,
+                        WR, LR3,LR5,LR2,LR2,LR2,LR5,MR1,MR2,H1,MR3,LR2,MR4,MR4,MR1,MR2,LR3,LR5,LR1,LR2,MR2,MR3,LR1,LR3,MR1,MR4,LR2,LR3,
+                        LR1,LR5,LR5,LR5,MR4,MR1,LR2,LR3,MR2,H1,H1,H1,MR3,LR2,MR4,MR4,MR1,MR2,LR3,LR5,LR1,LR2,MR2,MR3,LR1,LR3,MR1,MR4,LR2,LR3,
+                      },
+            new int[] { LR2, LR1,LR1,LR4,LR4,LR5,LR5,MR2,MR1,MR4,H1,MR1,MR2,MR3,MR3,MR3,MR3,MR1,MR2,LR2,LR4,LR3,LR3,LR3,LR3,LR5,MR2,MR2,LR4,LR2,
+                        LR5,LR5,LR4,LR1,LR1,LR1,LR5,MR1,MR2,H1,MR4,MR3,MR1,LR2,LR3,LR4,LR1,LR2,MR2,MR2,LR5,LR5,MR1,MR3,LR4,LR4,LR2,LR1,
+                        LR3,LR4,LR1,LR5,LR5,LR5,LR5,MR1,MR2,H1,MR4,MR3,MR1,LR5,LR3,LR4,LR1,LR2,MR2,MR2,LR5,LR5,MR1,MR3,LR4,LR3,LR2,LR5,
+                        WR, LR3,LR2,LR4,LR4,LR1,LR5,MR1,MR2,H1,H1,H1,H1,MR4,LR1,MR3,MR2,MR1,LR5,LR3,LR4,LR1,LR2,MR2,H1,LR5,LR3,MR1,MR3,LR2,LR5,
+                      },
+            },
         };
 
         internal static readonly int[][][] FS_Reels =
@@ -235,32 +266,67 @@ namespace Simulator.Games
                         WR, LR3,LR2,LR4,LR4,LR1,LR5,MR1,MR2,H1,H1,MR4,LR1,MR3,MR2,MR1,LR5,LR3,LR4,LR1,LR2,MR2,H1,LR5,LR3,MR1,MR3,LR2,LR5,
                       },
             },
+                        new int[][]{
+            new int[] { // no LR5
+                        WR, LR2,LR2,LR3,LR4,LR1,LR3,MR4,MR4,H1,MR1,MR1,MR3,MR3,MR3,MR3,MR4,LR1,LR4,LR2,LR1,LR3,LR3,LR3,LR3,MR1,MR2,LR4,LR3,
+                        LR1,LR3,LR4,LR2,LR2,LR2,LR3,MR1,MR2,H1,MR4,MR3,MR1,LR1,LR3,LR4,LR2,LR1,MR2,MR2,LR2,LR3,MR1,MR3,LR4,LR3,LR1,LR2,
+                        LR3,LR3,LR4,LR1,LR2,LR2,LR3,MR1,MR1,H1,MR4,LR1,MR3,MR3,MR2,LR1,LR3,LR4,LR2,LR1,MR2,MR4,LR2,LR3,MR2,MR3,LR4,LR3,
+                        LR2,LR2,LR2,LR2,MR3,MR1,LR1,LR3,H1 ,H1,H1, MR4,LR1,MR1,MR1,MR1,LR1,LR3,LR4,LR2,LR1,MR2,MR4,LR2,LR3,MR1,MR2,LR4,LR3,
+                      },
+            new int[] {
+                        LR5,LR5,LR1,LR3,LR4,LR5,MR1,MR1,MR4,H1,MR2,MR2,MR3,MR3,MR3,MR3,MR1,LR5,LR3,LR4,LR1,LR2,LR3,LR3,LR5,MR2,MR2,LR4,LR3,
+                        WR, LR5,LR3,LR4,LR1,LR1,LR5,LR5,MR1,MR2,H1,MR4,MR3,MR1,LR5,LR5,LR4,LR1,LR2,MR2,MR4,LR5,LR3,MR1,MR3,LR4,LR5,LR5,LR1,
+                        WR, LR3,LR3,LR3,LR3,LR4,LR2,LR1,LR1,LR5,MR1,MR2,H1,MR4,LR2,MR3,MR2,MR1,LR2,LR4,LR5,LR2,LR2,LR2,LR2,MR2,MR4,LR1,MR1,MR3,LR4,
+                        WR, LR5,LR1,LR1,LR4,MR3,MR1,LR2,LR5,MR2,H1,MR4,LR2,MR3,MR3,MR1,LR2,LR3,LR4,LR1,LR5,MR2,MR4,LR1,LR3,MR1,MR3,LR4,LR3,
+                      },
+            new int[] { // no MR2
+                        LR1,LR1,LR3,LR4,LR5,LR5,MR1,MR3,MR3,H1,MR1,MR4,MR4,MR4,MR3,MR1,LR2,LR3,LR5,LR5,LR2,LR3,LR3,LR5,MR1,MR4,LR4,LR3,
+                        LR5,LR3,LR4,LR1,LR2,LR2,LR5,MR1,MR1,H1,MR3,MR4,MR1,LR2,LR3,LR4,LR1,LR2,MR1,MR4,LR5,LR3,MR1,MR4,LR4,LR3,LR2,LR1,
+                        WR, LR3,LR3,LR3,LR3,LR2,LR4,LR4,LR4,LR5,MR1,MR1,H1,LR5,LR2,MR4,MR4,MR1,LR2,LR4,LR5,LR2,MR1,MR4,LR1,MR1,MR4,LR4,
+                        WR, LR1,LR1,LR4,LR4,MR4,MR1,LR2,LR5,MR1,H1,LR2,LR5,MR4,MR4,MR1,LR2,LR3,LR4,LR5,LR2,MR1,MR4,LR5,LR3,MR1,MR4,LR4,LR3,
+                      },
+            new int[] { // few LR4
+                        LR4,LR5,LR2,LR1,LR5,MR1,MR2,MR3,H1,MR1,MR2,MR4,MR4,MR4,MR4,MR1,MR2,H1,LR2,LR1,LR1,LR3,LR3,LR3,LR3,LR2,MR2,H1,LR5,
+                        SC, LR3,LR5,LR1,LR1,LR1,LR5,MR1,H1,H1,MR3,MR4,MR1,LR2,LR3,LR5,LR1,LR2,MR2,MR3,H1,LR3,MR1,MR4,LR5,LR3,LR2,LR1,
+                        WR, LR3,LR5,LR2,LR2,LR2,LR5,MR1,H1,H1,H1,MR3,LR2,MR4,MR4,MR1,MR3,LR3,LR5,LR1,LR2,MR2,MR3,LR1,LR3,MR1,MR4,LR2,LR3,
+                        WR, LR1,LR5,LR5,LR5,MR4,MR1,LR2,LR3,H1,H1,MR3,LR2,MR4,MR4,MR1,MR3,LR3,LR5,LR1,LR2,MR2,MR3,LR1,LR3,MR1,MR4,LR2,LR3,
+                      },
+            new int[] { LR2, LR1,LR1,LR3,LR4,LR5,LR5,MR2,MR1,MR1,H1,MR4,MR2,MR3,MR1,MR1,MR1,MR2,LR4,LR4,LR2,LR3,LR3,LR3,LR3,LR5,MR2,MR2,LR4,
+                        LR2, LR5,LR4,LR1,LR1,LR1,LR5,MR1,MR2,H1,MR4,MR3,MR1,LR2,LR3,LR4,LR1,LR2,MR2,MR2,LR5,LR5,MR1,MR3,LR4,LR4,LR2,LR1,
+                        SC, LR3,LR4,LR1,LR5,LR5,LR5,MR1,H1,H1,MR4,MR3,MR1,LR5,LR3,LR4,LR1,LR2,MR2,MR2,LR5,LR5,MR1,MR3,LR4,LR3,LR2,LR5,
+                        WR, LR3,LR2,LR4,LR4,LR1,LR5,MR1,H1,H1,H1,MR4,LR1,MR3,MR2,MR1,LR5,LR3,LR4,LR1,LR2,MR2,H1,LR5,LR3,MR1,MR3,LR2,LR5,
+                      },
+            },
         };
+
+        internal static int winCap = 10000;
 
         internal static RandomWeightArray basegameReelWeights = new RandomWeightArray(new int[,]
         {
-            { 0, 946},
-            { 1,  37},
-            { 2,  17}
+            { 0, 925},
+            { 1,  62},
+            { 2,  13},
+            { 4,  10},
         });
         internal static RandomWeightArray basegameReelWeightsBonusHunt = new RandomWeightArray(new int[,]
         {
-            { 0, 220},
-            { 1, 760},
-            { 2,  20}
+            { 0, 760},
+            { 1, 200},
+            { 2,  20},
+            { 3,  10},
+            { 4,  10},
         });
         internal static RandomWeightArray basegameReelWeightsFeatureSpin = new RandomWeightArray(new int[,]
         {
-            { 0, 950},
-            { 2,  40},
-            { 3,  10},
+            { 4,  10},
         });
         internal const int FeatureBuyReelsIndex = 3;
         internal static RandomWeightArray fsReelWeights = new RandomWeightArray(new int[,]
         {
             //{ 0, 300},
-            { 0, 900},
+            { 0, 895},
             { 1, 100},
+            { 2,   5},
         });
 
 
@@ -286,21 +352,38 @@ namespace Simulator.Games
             }),
             new RandomWeightArray(new int[,]
             {
-                { 1,  65},
+                { 1,  50},
                 { 2,  25},
-                { 3,   5},
-                { 4,   4},
-                { 5,   1},
+                { 3,  10},
+                { 4,  10},
+                { 5,   5},
+            }),
+            new RandomWeightArray(new int[,]
+            {
+                { 1,   5},
+                { 2,  10},
+                { 3,  30},
+                { 4,  30},
+                { 5,  25},
+            }),
+            new RandomWeightArray(new int[,]
+            {
+                { 0, 900},
+                { 1,  50},
+                { 2,  30},
+                { 3,  10},
+                { 4,   5},
+                { 5,   5},
             }),
         };
 
         internal static RandomWeightArray slicerAmountWeightFeatureSpin = new RandomWeightArray(new int[,]
         {
             { 1,   1},
-            { 2,   4},
-            { 3,  35},
-            { 4,  30},
-            { 5,  30},
+            { 2,   1},
+            { 3,  34},
+            { 4,  32},
+            { 5,  32},
         });
 
         internal static RandomWeightArray slicerAmountWeightFS = new RandomWeightArray(new int[,]
@@ -320,6 +403,14 @@ namespace Simulator.Games
             { 1, 2},
             { 2, 3},
             { 3, 4},
+        });
+
+        internal static RandomWeightArray slicerRowIndexWeightBonusHunt = new RandomWeightArray(new int[,]
+        {
+            { 0, 1},
+            { 1, 1},
+            { 2, 1},
+            { 3, 1},
         });
 
         internal static RandomWeightArray slicerValueWeight = new RandomWeightArray(new int[,]
@@ -350,30 +441,30 @@ namespace Simulator.Games
         internal static double redrawNoSliceWinProbaFeatureSpin = 0.75;
         internal static double redrawNoSliceWinProbaFS = 0.3;
 
-        internal double[] deadSpinProbas = new double[] { 0.444, 0.49 };
-        internal double[] deadSpinProbasBonusHunt = new double[] { 0.22, 0.284 };
-        internal double[] deadSpinProbasFeatureSpin = new double[] { 0.046, 0.124 };
+        internal double[] deadSpinProbas = new double[] { 0.442, 0.488 };
+        internal double[] deadSpinProbasBonusHunt = new double[] { 0.19, 0.255 };
+        internal double[] deadSpinProbasFeatureSpin = new double[] { 0.026, 0.105 };
 
         internal static readonly double[] bgRedrawThresholds =
         {
-                          0,  0.1,   5,   20,   50,   100, 200,  1000,  5000,   11000
+                          0,  0.1,   5,   20,   50,   100, 200,  1000,  5000,   
         };
 
         internal static readonly double[][] bgRedrawProbas =
         {
-           new double[]{  0,    0,   0, 0.00, 0.00,  0.10, 0.40,  0.80,  0.95,  1 },
-           new double[]{  0,    0,   0, 0.00, 0.00,  0.50, 0.80,  0.95,  0.99,  1 },
-           new double[]{  0,  0.4, 0.2, 0.00, 0.00,  0.00, 0.00,  0.00,  0.10,  1 },
+           new double[]{  0,    0,   0, 0.10, 0.20,  0.20, 0.30,  0.40,  0.40,   },
+           new double[]{  0,    0,   0, 0.00, 0.00,  0.10, 0.40,  0.60,  0.60,   },
+           new double[]{  0,  0.4, 0.2, 0.00, 0.00,  0.00, 0.00,  0.00,  0.10,   },
         };
 
         internal static readonly double[] bonusRedrawThresholds =
         {
-             0,     1,    10,     30,    50,   100,   200,   500,   1000,   2000,  5000, 11000
+             0,     1,    10,     30,    50,   100,   200,   500,   1000,   2000,  5000, 
         };
 
         internal static readonly double[] bonusRedrawProbas = new double[]
         {
-             1,  0.00,  0.00,   0.00,  0.00,  0.00,  0.05,  0.20,   0.40,   0.60,  0.80, 1
+             1,  0.00,  0.00,   0.00,  0.00,  0.00,  0.05,  0.20,   0.40,   0.60,  0.80, 
         };
 
         // State Variable
@@ -530,7 +621,7 @@ namespace Simulator.Games
             return spin;
         }
 
-        internal List<SlotSpin> GenerateFreeSpins(int fsAmount)
+        internal List<SlotSpin> GenerateFreeSpins(int fsAmount, int bgWin)
         {
             var freeSpins = new List<SlotSpin>();
             double redrawProba = 0;
@@ -546,6 +637,7 @@ namespace Simulator.Games
                     freeSpins.Add(fs);
                 }
                 double win = (double)freeSpins.Sum(x => x.GetTotalWin()) / BET_SIZE;
+                win = Math.Min(win, winCap - (double)bgWin / BET_SIZE);
                 redrawProba = MathUtil.GetProbaByValue(bonusRedrawThresholds, bonusRedrawProbas, win);
             } while (rand.NextDouble() < redrawProba);
                 
@@ -562,9 +654,9 @@ namespace Simulator.Games
             //Console.WriteLine("----------------");
 
             List<SlotSpin>? freeSpins = null; 
-            if(mainSpin.GetFinalSC() >= SC_TO_TRIGGER_FS)
+            if(mainSpin.GetFinalSC() >= SC_TO_TRIGGER_FS && win < winCap*BET_SIZE)
             {
-                freeSpins = GenerateFreeSpins(mainSpin.GetFinalSC());
+                freeSpins = GenerateFreeSpins(mainSpin.GetFinalSC(), win);
             }
 
             //collect statistics
@@ -579,6 +671,7 @@ namespace Simulator.Games
             internal Average BaseRTP = new();
             internal Average HitRate = new();
             internal double MaxWin = 0;
+            internal double MaxWay = 0;
             internal Average HitFSProba = new();
             internal Average AverageFSPayouts = new();
             internal Average AverageSquared = new();
@@ -602,23 +695,26 @@ namespace Simulator.Games
             {
                 SampleSize++;
                 //Basegame
-                int win = mainSpin.GetTotalWin();
-                BaseRTP.Add((double)mainSpin.GetTotalWin() / BET_SIZE);
+                int win = Math.Min(mainSpin.GetTotalWin(), winCap * BET_SIZE);
+                BaseRTP.Add((double)win / BET_SIZE);
                 foreach (SlotWin slotWin in mainSpin.Wins)
                 {
                     SymbolWins.Add(slotWin.SymbolWinIndex, slotWin.Size, (double)slotWin.Win / BET_SIZE);
+                    if(slotWin.Multiplier > MaxWay)
+                        MaxWay = slotWin.Multiplier;
                 }
                 WRLandingDistBG.Add(mainSpin.InitialLandWildAmount);
                 CascadeDistBG.Add(mainSpin.CascadingCount);
                 SCLandingDistBG.Add(mainSpin.GetFinalSC());
                 SliceWinSymbolDistBG.Add(mainSpin.InitialSliceWinSymbol);
-                WinDistributionBG.Add(win / BET_SIZE);
+                WinDistributionBG.Add((double)win / BET_SIZE);
 
                 //free spins
                 HitFSProba.Add(freeSpins == null ? 0 : 1);
                 if(freeSpins != null)
                 {
                     int fsWin = freeSpins.Sum(x => x.GetTotalWin());
+                    fsWin = Math.Min(fsWin, winCap * BET_SIZE - win);
                     win += fsWin;
                     AverageFSPayouts.Add((double)fsWin / BET_SIZE);
                     WinDistributionFS.Add((double)fsWin / BET_SIZE);
@@ -651,6 +747,7 @@ namespace Simulator.Games
                 Console.WriteLine($"Sample Size: {SampleSize}");
                 Console.WriteLine($"Variance: {AverageSquared.Value - Math.Pow(ReturnToPlayer.Value, 2)}");
                 Console.WriteLine($"Max Win: {MaxWin}x");
+                Console.WriteLine($"Max Way In BG: {MaxWay}");
                 Console.WriteLine($"RTP: {ReturnToPlayer.Percentage}");
                 Console.WriteLine($"Base RTP: {BaseRTP.Percentage}");
                 Console.WriteLine($"FS RTP: {AverageFSPayouts.Value * HitFSProba.Value * 100}%");
@@ -834,6 +931,8 @@ namespace Simulator.Games
                         {
                             if(simulationBetMode == BetMode.Buy)
                                 slicerRow = FeatureBuySlicerRow;
+                            else if(simulationBetMode == BetMode.BonusHunt)
+                                slicerRow = slicerRowIndexWeightBonusHunt.rollSingleItem(RandReference);
                             else
                                 slicerRow = slicerRowIndexWeight.rollSingleItem(RandReference);
                         }
